@@ -1,214 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+<meta charset="UTF-8">
+<title>상암 클럽 추천 가이드 — 조건별 선택을 위한 종합 안내 및 방문 전 체크리스트 완벽 가이드</title>
+<meta name="description" content="상암 지역의 다양한 클럽을 객관적으로 비교하고, 방문 목적·인원수·음악 취향에 따라 최적의 장소를 선택할 수 있도록 상세한 기준과 사전 확인사항을 제공합니다. 현장 방문 전 반드시 확인하세요.">
+<meta name="keywords" content="상암 클럽, 클럽 추천, 상암 나이트라이프, 클럽 선택 가이드, 클럽 이용 체크리스트">
+<link rel="canonical" href="https://sangam-club-note.pub-jongno-pro.xyz/">
+<meta property="og:title" content="상암 클럽 추천 가이드 — 조건별 선택을 위한 종합 안내 및 방문 전 체크리스트 완벽 가이드">
+<meta property="og:description" content="상암 지역의 다양한 클럽을 객관적으로 비교하고, 방문 목적·인원수·음악 취향에 따라 최적의 장소를 선택할 수 있도록 상세한 기준과 사전 확인사항을 제공합니다. 현장 방문 전 반드시 확인하세요.">
+<meta property="og:url" content="https://sangam-club-note.pub-jongno-pro.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sangam-club-note.pub-jongno-pro.xyz/og-image.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="상암 클럽 추천 가이드 — 조건별 선택을 위한 종합 안내 및 방문 전 체크리스트 완벽 가이드">
+<meta name="twitter:description" content="상암 지역의 다양한 클럽을 객관적으로 비교하고, 방문 목적·인원수·음악 취향에 따라 최적의 장소를 선택할 수 있도록 상세한 기준과 사전 확인사항을 제공합니다.">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-ledger-warm">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "상암 클럽은 어느 시간대에 가장 활기찬가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "대부분의 클럽은 밤 10시부터 새벽 2시까지가 피크 타임입니다. 이 시간대에 DJ 라인업과 인파가 가장 풍부합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "입장 시 드레스 코드는 어떻게 되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "상암 클럽은 주로 스마트 캐주얼을 권장합니다. 운동복이나 슬리퍼는 입장이 제한될 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "음악 장르는 클럽마다 어떻게 다른가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "일부 클럽은 힙합·R&B 중심, 다른 클럽은 EDM·테크노를 주력으로 합니다. 공식 홈페이지 또는 SNS에서 사전에 확인하는 것이 좋습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "예약 없이 방문해도 입장이 가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "주말과 행사일은 입장 인원이 제한될 수 있어 사전 예약을 권장합니다. 평일 저녁은 비교적 자유롭게 입장합니다."
+      }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "상암 클럽 추천 가이드",
+  "author": {
+    "@type": "Person",
+    "name": "한빛 가이드"
+  },
+  "description": "상암 지역 클럽을 객관적으로 비교하고, 목적·인원·음악 취향에 맞는 선택을 돕는 전문 가이드."
+}
+</script>
+<style>
+/* 기본 타이포그래피 */
+body{margin:0;padding:0;font-family:'Noto Serif KR',serif;background:#fafaf7;color:#191917;line-height:1.6;}
+h1,h2,h3{font-family:'Noto Serif KR',serif;margin:0;padding:0;}
+code,pre,.r-wrap-qeyp{font-family:'IBM Plex Mono',monospace;}
+/* 레이아웃 컨테이너 */
+.x-ico-b5fa{max-width:960px;margin:0 auto;padding:0 24px;}
+/* 공간 규칙 */
+.m-box-77h2{padding:72px 0;}
+.m-box-77h2 + .m-box-77h2{margin-top:120px;}
+/* 헤더와 네비게이션 */
+.n-body-0gcc{background:#fafaf7;position:sticky;top:0;z-index:10;border-bottom:2px solid #191917;}
+.v-foot-u64k{display:flex;justify-content:space-between;align-items:center;padding:24px 0;}
+.k-img-8dg9{font-size:1.5rem;font-weight:700;}
+.k-item-hdta{list-style:none;margin:0;padding:0;display:flex;gap:48px;}
+.k-item-hdta li a{color:#191917;text-decoration:none;font-weight:500;}
+/* 햄버거 */
+.m-ico-95pl{display:none;}
+.x-card-4rhd{display:none;flex-direction:column;gap:6px;cursor:pointer;}
+.x-card-4rhd span{display:block;width:24px;height:2px;background:#191917;}
+@media (max-width:768px){
+  .k-item-hdta{display:none;flex-direction:column;background:#fafaf7;padding:24px;}
+  .m-ico-95pl:checked + .k-item-hdta{display:flex;}
+  .x-card-4rhd{display:flex;}
+}
+/* 히어로 */
+.k-main-sn4y{background:#fafaf7;padding:72px 0;text-align:center;}
+.k-main-sn4y h1{font-size:2.5rem;color:#191917;margin-bottom:24px;}
+.k-main-sn4y p{font-size:1rem;color:#191917;max-width:720px;margin:auto;}
+/* 규칙선 */
+.k-nav-wqn4{border:none;border-top:2px solid #191917;margin:48px 0;}
+/* 테이블 */
+.t-side-rq9z{width:100%;border-collapse:collapse;font-size:0.95rem;}
+.t-side-rq9z th,.t-side-rq9z td{padding:12px 8px;border-bottom:1px solid #191917;text-align:left;}
+.t-side-rq9z thead th{border-top:3px double #191917;border-bottom:3px double #191917;font-weight:700;}
+/* 사이드바 */
+.x-grid-3p00{margin-top:48px;background:#fafaf7;padding:24px;border-left:2px solid #191917;}
+.t-side-hqr4{margin-bottom:24px;}
+.t-side-hqr4 h3{font-size:1.1rem;margin-bottom:8px;color:#c8960c;}
+.t-side-hqr4 p{margin:0;font-size:0.95rem;}
+/* FAQ */
+.v-side-ousx-item{margin-bottom:48px;}
+.v-side-ousx-item h3{font-size:1.2rem;margin-bottom:12px;color:#191917;}
+.v-side-ousx-item p{margin:0;font-size:0.95rem;}
+/* 저자 */
+.x-head-bui5{background:#fafaf7;padding:48px 0;border-top:2px solid #191917;}
+.x-head-bui5 p{margin:0;font-size:0.95rem;}
+/* 푸터 */
+.t-nav-qsg2{background:#fafaf7;padding:24px 0;text-align:center;font-size:0.85rem;color:#191917;border-top:2px solid #191917;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+<header class="n-body-0gcc">
+  <div class="x-ico-b5fa v-foot-u64k">
+    <div class="k-img-8dg9">상암 클럽 추천 가이드</div>
+    <input type="checkbox" id="nav-toggle" class="m-ico-95pl">
+    <label for="nav-toggle" class="x-card-4rhd"><span></span><span></span><span></span></label>
+    <ul class="k-item-hdta">
+      <li><a href="#criteria">선택 기준</a></li>
+      <li><a href="#checklist">방문 전 확인</a></li>
+      <li><a href="#suitability">조건별 적합성</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#author">작성자 소개</a></li>
+    </ul>
   </div>
+</header>
+
+<main class="t-body-t1lg">
+  <section class="k-main-sn4y">
+    <div class="x-ico-b5fa">
+      <h1>상암 클럽을 현명하게 고르는 가이드</h1>
+      <p>다양한 음악 분위기, 인원 규모, 운영 시간 등 객관적인 데이터를 기반으로 상암 지역 클럽을 비교하고, 최적의 선택을 돕습니다.</p>
+    </div>
+    <hr class="k-nav-wqn4">
+  </section>
+
+  <section id="criteria" class="m-box-77h2">
+    <div class="x-ico-b5fa">
+      <h2>클럽 선택 기준</h2>
+      <table class="t-side-rq9z">
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>세부 내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>음악 장르</td>
+            <td>EDM·테크노, 힙합·R&B, 하우스·디스코 등 주요 라인업 확인</td>
+          </tr>
+          <tr>
+            <td>입장 인원</td>
+            <td>소규모(≤100명)·중규모(101~300명)·대규모(>300명) 중 선택</td>
+          </tr>
+          <tr>
+            <td>운영 시간</td>
+            <td>평일 22시~02시, 주말 21시~04시 등 실제 영업시간 검증</td>
+          </tr>
+          <tr>
+            <td>가격 정책</td>
+            <td>입장료, 드링크 가격, 멤버십 혜택 등 투명한 가격 구조</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="k-nav-wqn4">
+    </div>
+  </section>
+
+  <section id="checklist" class="m-box-77h2">
+    <div class="x-ico-b5fa">
+      <h2>방문 전 확인사항</h2>
+      <ul class="k-item-hdta" style="flex-direction:column;gap:12px;">
+        <li>공식 SNS·홈페이지에서 최신 이벤트 정보를 확인</li>
+        <li>주차 가능 여부와 대중교통 접근성을 점검</li>
+        <li>드레스 코드와 입장 제한 연령을 사전 확인</li>
+        <li>예약 필요 여부와 사전 결제 옵션을 검토</li>
+      </ul>
+      <hr class="k-nav-wqn4">
+    </div>
+  </section>
+
+  <section id="suitability" class="m-box-77h2">
+    <div class="x-ico-b5fa">
+      <h2>조건별 적합성</h2>
+      <div style="display:flex;gap:48px;flex-wrap:wrap;">
+        <aside class="x-grid-3p00" style="flex:1 1 300px;">
+          <div class="t-side-hqr4">
+            <h3>첫 방문</h3>
+            <p>대중적인 힙합·R&B 라인업과 중규모 인원을 가진 클럽을 선택해 분위기에 익숙해지세요.</p>
+          </div>
+          <div class="t-side-hqr4">
+            <h3>친구와 파티</h3>
+            <p>대규모 클럽에서 EDM·테크노 파티를 즐기면 공간과 사운드 시스템을 충분히 활용할 수 있습니다.</p>
+          </div>
+          <div class="t-side-hqr4">
+            <h3>데이트</h3>
+            <p>조용한 라운지 분위기의 소규모 클럽을 선택하면 대화가 용이하고 분위기가 로맨틱합니다.</p>
+          </div>
+        </aside>
+      </div>
+      <hr class="k-nav-wqn4">
+    </div>
+  </section>
+
+  <section id="faq" class="m-box-77h2 v-side-ousx">
+    <div class="x-ico-b5fa">
+      <h2>자주 묻는 질문</h2>
+      <div class="v-side-ousx-item">
+        <h3>상암 클럽은 어느 시간대에 가장 활기찬가요?</h3>
+        <p>대부분의 클럽은 밤 10시부터 새벽 2시까지가 피크 타임이며, 이때 DJ 라인업과 인파가 가장 풍부합니다.</p>
+      </div>
+      <div class="v-side-ousx-item">
+        <h3>입장 시 드레스 코드는 어떻게 되나요?</h3>
+        <p>스마트 캐주얼을 기본으로 하며, 운동복·슬리퍼 등은 입장이 제한될 수 있습니다.</p>
+      </div>
+      <div class="v-side-ousx-item">
+        <h3>음악 장르는 클럽마다 어떻게 다른가요?</h3>
+        <p>일부 클럽은 힙합·R&B, 다른 클럽은 EDM·테크노를 주력으로 합니다. 사전 확인을 권장합니다.</p>
+      </div>
+      <div class="v-side-ousx-item">
+        <h3>예약 없이 방문해도 입장이 가능한가요?</h3>
+        <p>주말·행사일은 인원 제한이 있어 사전 예약을 권장합니다. 평일 저녁은 비교적 자유롭게 입장합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="author" class="x-head-bui5">
+    <div class="x-ico-b5fa">
+      <p>한빛 가이드 – 상암 지역 나이트라이프를 5년간 탐구해 온 로컬 가이드. 현장의 흐름과 데이터를 기반으로 객관적인 정보를 제공합니다.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="t-nav-qsg2">
+  <div class="x-ico-b5fa">
+    © 2026 상암 클럽 추천 가이드. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
